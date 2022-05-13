@@ -18,7 +18,6 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 // connect to real db mongodb atlasF
-const CONNECTION_URL = 'mongodb+srv://taran:taran@cluster0.hendy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useunifiedTopology: true,}).
